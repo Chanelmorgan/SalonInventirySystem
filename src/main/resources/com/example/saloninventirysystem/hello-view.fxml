@@ -1,16 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.saloninventirysystem.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="581.0" prefWidth="902.0">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="890.0" style="-fx-background-color: #00008B;">
+               <children>
+                  <Label layoutX="266.0" layoutY="29.0" prefHeight="37.0" prefWidth="376.0" text="Salon Inventory System" textFill="#fffefe">
+                     <font>
+                        <Font name="Arial Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="14.0" layoutY="105.0" prefHeight="339.0" prefWidth="265.0" style="-fx-border-color: black;">
+               <children>
+                  <CheckBox layoutX="34.0" layoutY="38.0" mnemonicParsing="false" text="Cut and Blow Dry" />
+                  <CheckBox layoutX="34.0" layoutY="100.0" mnemonicParsing="false" text="Hair Wash" />
+                  <CheckBox layoutX="33.0" layoutY="161.0" mnemonicParsing="false" text="Facial" />
+                  <CheckBox layoutX="32.0" layoutY="225.0" mnemonicParsing="false" text="Shave" />
+                  <CheckBox layoutX="33.0" layoutY="287.0" mnemonicParsing="false" text="Blonde Hair Dye" />
+               </children>
+            </Pane>
+            <Pane layoutX="288.0" layoutY="105.0" prefHeight="339.0" prefWidth="581.0" style="-fx-border-color: black;">
+               <children>
+                  <TableView prefHeight="339.0" prefWidth="581.0">
+                    <columns>
+                      <TableColumn prefWidth="287.0" text="Item Type" />
+                      <TableColumn prefWidth="293.0" text="Price" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Button layoutX="107.0" layoutY="464.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="55.0" text="Add">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Pane layoutX="288.0" layoutY="456.0" prefHeight="103.0" prefWidth="581.0" style="-fx-border-color: black;">
+               <children>
+                  <Label layoutX="25.0" layoutY="29.0" prefHeight="20.0" prefWidth="80.0" text="SubTotal">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="69.0" prefHeight="20.0" prefWidth="80.0" text="Balance">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="291.0" layoutY="29.0" prefHeight="20.0" prefWidth="80.0" text="Payment">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="105.0" layoutY="26.0" />
+                  <TextField layoutX="105.0" layoutY="66.0" />
+                  <TextField layoutX="371.0" layoutY="26.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

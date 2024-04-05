@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SalonInventirySystem" />
+        <module name="BasicSalonInventorySystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SalonInventirySystem" target="17" />
+      <module name="BasicSalonInventorySystem" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
